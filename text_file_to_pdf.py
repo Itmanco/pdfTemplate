@@ -15,6 +15,6 @@ for filepath in filespaths:
 
         pdf.cell(w=20, h=16, txt=name.title(), )
         pdf.ln(16)
-        pdf.cell(w=50, h=8, txt=data, ln=1)
+        pdf.multi_cell(w=160, h=8, txt=data)
 
 pdf.output("PDFs/animals.pdf")
